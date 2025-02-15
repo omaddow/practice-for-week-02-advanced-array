@@ -14,7 +14,7 @@ downloaded.
 To get started, use the following commands:
 
 1. `cd` into the project directory
-2. `npm install` to install any dependencies
+2. `npm install` to install any dependencies //If doen't work run Shell as admin and type ('Set-ExecutionPolicy RemoteSIgned') then press A;
 3. `npm test` to run the test cases
 
 The `npm test` command will run all the tests. If you have any trouble with this
