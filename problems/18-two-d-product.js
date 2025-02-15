@@ -26,8 +26,13 @@ console.log(twoDimensionalProduct(arr2)); // 88
 */
 
 let twoDimensionalProduct = function(arr) {
-    // Your code here
+  return arr.reduce((total, subArray) => {
+      // Multiply all elements in the sub-array
+      let subProduct = subArray.reduce((product, num) => product * num, 1);
+      return total * subProduct; // Multiply the sub-array product with the total
+  }, 1); // Start the total product as 1
 };
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

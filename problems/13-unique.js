@@ -15,7 +15,13 @@ console.log(unique(['a', 'b', 'c', 'b'])); // ['a', 'b', 'c']
 */
 
 let unique = function(array) {
-    // Your code here
+    let uniqueSet = new Set();  // Create a Set to store unique values
+
+    array.forEach(item => {
+        uniqueSet.add(item);  // Add each item to the Set
+    });
+
+    return [...uniqueSet];  // Convert Set back to an array
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -24,4 +30,4 @@ try {
     module.exports = unique;
 } catch (e) {
     module.exports = null;
-}
+}

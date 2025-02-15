@@ -17,7 +17,16 @@ console.log(longestWord('')); // ''
 */
 
 let longestWord = function(sentence) {
-    // Your code here
+    let words = sentence.split(' '); // Split sentence into words
+    let longest = ''; // Variable to track the longest word
+
+    words.forEach(word => {
+        if (word.length > longest.length) {  // If the current word is longer than the longest
+            longest = word;  // Update the longest word
+        }
+    });
+
+    return longest;
 };
 
 // Your code here
@@ -28,4 +37,4 @@ try {
     module.exports = longestWord;
 } catch (e) {
     module.exports = null;
-}
+}
